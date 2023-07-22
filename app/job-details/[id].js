@@ -26,7 +26,7 @@ const JobDetails = () => {
   const params = useSearchParams();
   const router = useRouter();
 
-  const { data, isLoading, error, fetech } = useFetch("job-details", {
+  const { data, isLoading, error, refetch } = useFetch("job-details", {
     job_id: params.id,
   });
 
