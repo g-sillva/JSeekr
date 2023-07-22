@@ -51,7 +51,12 @@ const JobDetails = () => {
           />
         );
       case "Responsabilities":
-        break;
+        return (
+            <Specifics
+              title="Responsabilities"
+              points={data[0].job_highlights?.Responsibilities ?? ["N/A"]}
+            />
+          );
       default:
         break;
     }
